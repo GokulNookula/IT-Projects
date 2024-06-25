@@ -78,7 +78,7 @@ for drive in drivers:
     time.sleep(3)
 
     # Rename and move the downloaded file
-    downloadDir = "C:/Users/gnook002/Downloads"
+    downloadDir = ""
     originalFilename = "users.csv"
-    destinationDir = "C:/Users/gnook002/Desktop/Code/project/All Apps Profiles"
+    destinationDir = ""
     rename_and_move_downloaded_file(downloadDir, originalFilename, fileproductProfName, destinationDir)

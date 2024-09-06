@@ -8,6 +8,10 @@ import secret
 import time
 import csv
 
+#Add the total number of pages on the Adobe Admin Console of All Apps here
+#Make sure to start your count from 0,1 and not 1,2.
+page = 5
+
 # Initialize the Chrome driver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -49,7 +53,7 @@ with open('profileLinks.csv', mode='w', newline='') as file:
 
     # Getting inside the table of list of profiles
     # We have 5 pages of profiles in Adobe
-    for i in range(5): #CHANGE PAGE NUMBER HERE
+    for i in range(page): #CHANGE PAGE NUMBER HERE
         numRows = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "_5uzlQq_spectrum-Table-row")))
 
         for row in numRows:

@@ -117,11 +117,17 @@ Run `comparingOldCsvWithNewCsv.py` to compare older CSV files with newly generat
 ```bash
 python comparingOldCsvWithNewCsv.py
 ```
+### Running the Scripts:
+You can run each script as described in the steps above. Make sure to follow the order in the usage section to avoid errors.
 
+### Configuration:
+#### Files and Directories:
+- **Input CSVs**: Place the input CSV files in the relevant folders (e.g., `All Apps Profiles`, `Completed Files`).
+- **Output Files**: The processed files are stored in the `Output Test Folder`.
 
+#### Authentication:
+The login credentials for the Adobe Admin Console are stored in the `secret.py` file. Make sure to keep this file private and secure.
 
-
-
-
-
-
+### Notes:
+- The script assumes you are using Chrome as your browser. If using another browser, you may need to configure Selenium WebDriver accordingly.
+- Ensure that the downloaded user profiles are saved correctly in the CSV format, as the rest of the program depends on processing these files.
